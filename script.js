@@ -17,3 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 });
+// In the observer callback
+if (entry.isIntersecting) {
+    entry.target.classList.add('visible'); // Add this line
+}
