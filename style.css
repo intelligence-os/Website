@@ -202,3 +202,27 @@ section.visible {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
 }
+.typewriter-container {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: #9f2709; /* Matches your brand color */
+    position: relative;
+    animation: float 3s ease-in-out infinite; /* Floating effect */
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); } /* Gentle up-down float */
+}
+
+#typewriter-text::after {
+    content: '|'; /* Cursor effect */
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
