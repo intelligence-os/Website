@@ -171,3 +171,9 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+#custom-reel1 {
+    height: 400px; /* Increased from 200px to better fit vertical Reels */
+    width: 100%; /* Keeps it responsive */
+    object-fit: contain; /* Shows full video without cropping (may add black bars if not exact fit) */
+}
